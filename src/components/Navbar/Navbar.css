@@ -2,3 +2,21 @@
     width: 100%;
     height: auto
 }
+
+.box {
+    background-image: linear-gradient(30deg, rgba(0, 148, 233, 0.5) 0%, rgba(73, 133, 98, 0.5) 50%, #283a2a 100%);
+    width: 30%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    margin-left: 60vw;
+    margin-right: 15px;
+}
+
+#logo {
+    filter: drop-shadow(0px 0px 10px rgba(31, 29, 16, 0.5));
+    height: 450px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
