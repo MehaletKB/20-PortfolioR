@@ -15,8 +15,42 @@
 
 #logo {
     filter: drop-shadow(0px 0px 10px rgba(31, 29, 16, 0.5));
-    height: 450px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
+
+h1 {
+    font-family: 'Stalemate', cursive;
+    font-size: 75px;
+    color: var(--white-text);
+    filter: drop-shadow(0px 0px 10px rgba(31, 29, 16, 0.5));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: var(--white-text);
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    text-decoration:none; 
+    opacity:0.6;
+    -webkit-transition: opacity .3s linear; 
+    -moz-transition: opacity .3s linear; 
+    -ms-transition: opacity .3s linear; 
+    -o-transition: opacity .3s linear; 
+    transition: opacity .3s linear;
+}
+

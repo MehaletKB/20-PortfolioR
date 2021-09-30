@@ -13,7 +13,14 @@ export default function Navbar() {
             </div>
             <div class="box">
                 <Image id="logo" src={Logo} />
+                <h1> Mehalet KesateBirhan</h1>
+                <ul className="text-center">
+                    <a href="#about-me">About</a>
+                    <a href="#my-work ">Projects</a>
+                    <a href="#more">Contact</a>
+                </ul>
             </div>
+
         </Container>
     )
 }
