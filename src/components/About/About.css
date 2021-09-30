@@ -2,3 +2,16 @@
     background: rgb(9,5,74);
     background: linear-gradient(-20deg, rgb(14, 60, 90) 0%, rgb(41, 129, 141) 40%, rgb(84, 156, 36) 100%);
 }
+
+h2 {
+    color: var(--white-text);
+    text-align: center;
+    font-size: 30px;
+    padding: 20px
+}
+
+.about-text {
+    color: var(--white-text);
+    text-align: center;
+    padding: 20px;
+}
