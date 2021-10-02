@@ -33,22 +33,43 @@ import "./Projects.css";
 function Projects() {
   return (
     <div className="projects d-flex flex-row" id="projects">
-    <Row>
-      <Card className="border border-white" style={{ width: "18rem" }}>
-        <Card.Img variant="top" className="img-style" src={MyDaily} />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-      </Row>
+      {/* <Row> */}
+        <Card className="card" style={{ width: "18rem" }}>
+          <Card.Img variant="top" className="img-style" src={MyDaily} />
+          <Card.Body className="body-style">
+            <Card.Title className="card-text">Card Title</Card.Title>
+            <Card.Text className="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Button className="btn-style">
+              Go somewhere
+            </Button>
+            <Button className="btn-style">
+              Go somewhere
+            </Button>
+          </Card.Body>
+        </Card>
+        
+        <Card className="card" style={{ width: "18rem" }}>
+          <Card.Img variant="top" className="img-style" src={MyDaily} />
+          <Card.Body className="body-style">
+            <Card.Title className="card-text">Card Title</Card.Title>
+            <Card.Text className="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Button className="btn-style">
+              Go somewhere
+            </Button>
+            <Button className="btn-style">
+              Go somewhere
+            </Button>
+          </Card.Body>
+        </Card>
+      {/* </Row> */}
     </div>
-    
   );
 }
 
-export default Projects
+export default Projects;

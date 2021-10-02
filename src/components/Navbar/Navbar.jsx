@@ -16,8 +16,8 @@ export default function Navbar() {
                 <h1> Mehalet KesateBirhan</h1>
                 <ul className="text-center">
                     <a href="#about">About</a>
-                    <a href="#my-work ">Projects</a>
-                    <a href="#more">Contact</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
                 </ul>
             </div>
 

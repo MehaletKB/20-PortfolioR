@@ -4,7 +4,7 @@ import "./Contact.css";
 
 export default function Contact() {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
         <h2 className="pt-3 text-center font-details-b pb-3">
         <i class="far fa-id-card fa-fw"> Get In Touch</i>
       </h2>
