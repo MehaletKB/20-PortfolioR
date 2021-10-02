@@ -14,7 +14,7 @@ export default function About() {
                 <h2><i class="fas fa-comment-dots"></i> I've got new skill and I'm not afraid to use them!</h2>
                 <Container className="about-text">
                     <div >
-                        <p>Hi! I'm <strong>Mehalet</strong>, a newly minted Full Stack Developer whose true strength is in Frontend development. <br/>I'm very eager to help bring great ideas to life by collaborating and learning from fellow developers.</p><br/>
+                        <p>Hi! I'm <strong>Mehalet</strong>, a newly minted Full Stack Developer whose true strength is in Frontend development. <br/>I'm very eager to learn, collaborate and help bring great ideas to life.</p><br/>
                         <p>Originally from Ethiopia, I relocated  to the US in 2006 and have taken many career paths since. I'm currently a full time Graphic Designer looking to bridge Art with Web Development to create beautiful and engaging applications.</p>
                     </div>
                 </Container>

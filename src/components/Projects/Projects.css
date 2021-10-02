@@ -24,7 +24,7 @@
 .card-title{
     font-size: 30px;
     color: white;
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 2px;
     margin-bottom: 10px ;
     background-color: rgba(82, 42, 226, 0.123);
@@ -48,7 +48,7 @@
     color: var(--white-text);
     text-decoration: none;
     font-size: 20px;
-    padding: 5px;
+    padding: 4px;
     margin: 30px;
     background:rgb(118, 166, 179);
 }
@@ -61,21 +61,26 @@
 }
 
 .tools {
-    width: 10%;
-    margin: 20px 5px
+    width: 12%;
+    margin: 20px 4px
 }
 
 .tools2 {
     width: 20%;
-    margin: 20px 5px
+    margin: 20px 4px
 }
 
 .tools3 {
-    width: 13%;
-    margin: 20px 5px
+    width: 12%;
+    margin: 20px 4px
 }
 
 .tools4 {
     width: 8%;
-    margin: 20px 5px
+    margin: 20px 4px
+}
+
+.tools-h {
+    width: 22%;
+    margin: -10px
 }

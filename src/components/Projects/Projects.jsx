@@ -28,13 +28,14 @@ import L_GITHUB_PAGES from "../../images/tools/github.svg";
 import L_REDUX from "../../images/tools/redux.svg";
 import L_JQUERY from "../../images/tools/jquery.svg";
 import L_STRIPE from "../../images/tools/stripe.svg";
+import L_BULMA from "../../images/tools/bulma.svg";
 
 import "./Projects.css";
 
 function Projects() {
   return (
     <div className="project-top"  id="projects">
-    <h2><i class="fas fa-project-diagram"></i> Things I've Made</h2>
+    <h2><i class="fas fa-project-diagram"></i> Things I've Worked On</h2>
     <div className="all-projects">
       {/* <Row> */}
       <Card className="card">
@@ -66,10 +67,11 @@ function Projects() {
             </Card.Text>
               <div>
                 <Card.Img variant="top" className="tools2" src={L_EXPRESS} />
-                <Card.Img variant="top" className="tools2" src={L_HANDLEBARS} />
+                <Card.Img variant="top" className="tools-h" src={L_HANDLEBARS} />
+                <Card.Img variant="top" className="tools3" src={L_BOOTSTRAP} />
                 <Card.Img variant="top" className="tools" src={L_MYSQL} />
-                <Card.Img variant="top" className="tools2" src={L_STRIPE} />
                 <Card.Img variant="top" className="tools4" src={L_HEROKU} />
+                <Card.Img variant="top" className="tools2" src={L_STRIPE} />
             </div>
             <Button className="card-btn" href="https://artsell.herokuapp.com/" target="_blank">
               Live Page
@@ -92,6 +94,7 @@ function Projects() {
                 <Card.Img variant="top" className="tools" src={L_CSS3} />
                 <Card.Img variant="top" className="tools" src={L_JAVASCRIPT} />
                 <Card.Img variant="top" className="tools3" src={L_JQUERY} />
+                <Card.Img variant="top" className="tools4" src={L_BULMA} />
                 <Card.Img variant="top" className="tools3" src={L_GITHUB_PAGES} />
             </div>
             <Button className="card-btn" href="https://github.com/MehaletKB/myDaily" target="_blank">
