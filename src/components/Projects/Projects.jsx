@@ -8,6 +8,7 @@ import Button from "react-bootstrap/Button";
 
 import MyDaily from "../../images/projects/07-myDaily.gif";
 import ArtSell from "../../images/projects/16-ArtSell.gif";
+import WorkoutTracker from "../../images/projects/18-WorkoutTracker.gif"
 
 import L_HTML from "../../images/tools/html-5.svg";
 import L_CSS3 from "../../images/tools/CSS3_logo.svg";
@@ -32,10 +33,53 @@ import "./Projects.css";
 
 function Projects() {
   return (
-    <div className="project-top">
-    <h2><i class="fas fa-project-diagram"></i>Things I've Made</h2>
-    <div className="all-projects" id="projects">
+    <div className="project-top"  id="projects">
+    <h2><i class="fas fa-project-diagram"></i> Things I've Made</h2>
+    <div className="all-projects">
       {/* <Row> */}
+      <Card className="card">
+          <Card.Img variant="top" className="img-style" src={WorkoutTracker} />
+          <Card.Body className="body-style">
+            <Card.Title className="card-title">Workout Tracker</Card.Title>
+            <Card.Text className="card-text">
+              An application that lets users log and track workout sessions.
+            </Card.Text>
+              <div>
+                <Card.Img variant="top" className="tools2" src={L_EXPRESS} />
+                <Card.Img variant="top" className="tools2" src={L_MONGODB} />
+            </div>
+            <Button className="card-btn" href="https://github.com/MehaletKB/18-WorkoutTracker" target="_blank">
+              Live Page
+            </Button>
+            <Button className="card-btn" href="https://floating-tundra-80148.herokuapp.com/?id=613eac9076b6491c68a6b56a" target="_blank">
+              GitHub
+            </Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="card">
+          <Card.Img variant="top" className="img-style" src={ArtSell} />
+          <Card.Body className="body-style">
+            <Card.Title className="card-title">ArtSell</Card.Title>
+            <Card.Text className="card-text">
+              A small e-commerce application for the display and sale of artwork.
+            </Card.Text>
+              <div>
+                <Card.Img variant="top" className="tools2" src={L_EXPRESS} />
+                <Card.Img variant="top" className="tools2" src={L_HANDLEBARS} />
+                <Card.Img variant="top" className="tools" src={L_MYSQL} />
+                <Card.Img variant="top" className="tools2" src={L_STRIPE} />
+                <Card.Img variant="top" className="tools4" src={L_HEROKU} />
+            </div>
+            <Button className="card-btn" href="https://artsell.herokuapp.com/" target="_blank">
+              Live Page
+            </Button>
+            <Button className="card-btn" href="https://github.com/MehaletKB/ArtSell" target="_blank">
+              GitHub
+            </Button>
+          </Card.Body>
+        </Card>
+
         <Card className="card">
           <Card.Img variant="top" className="img-style" src={MyDaily} />
           <Card.Body className="body-style">
@@ -47,56 +91,19 @@ function Projects() {
                 <Card.Img variant="top" className="tools" src={L_HTML} />
                 <Card.Img variant="top" className="tools" src={L_CSS3} />
                 <Card.Img variant="top" className="tools" src={L_JAVASCRIPT} />
-                <Card.Img variant="top" className="tools" src={L_JQUERY} />
-                <Card.Img variant="top" className="tools" src={L_GITHUB_PAGES} />
+                <Card.Img variant="top" className="tools3" src={L_JQUERY} />
+                <Card.Img variant="top" className="tools3" src={L_GITHUB_PAGES} />
             </div>
             <Button className="card-btn" href="https://github.com/MehaletKB/myDaily" target="_blank">
               Live Page
             </Button>
             <Button className="card-btn" href="https://github.com/MehaletKB/myDaily" target="_blank">
-              GitHub
-            </Button>
-          </Card.Body>
-        </Card>
-        <Card className="card">
-          <Card.Img variant="top" className="img-style" src={ArtSell} />
-          <Card.Body className="body-style">
-            <Card.Title className="card-title">ArtSell</Card.Title>
-            <Card.Text className="card-text">
-              A small e-commerce application for the display and sale of artwork.
-            </Card.Text>
-              <div>
-                <Card.Img variant="top" className="tools" src={L_JQUERY} />
-                <Card.Img variant="top" className="tools" src={L_JQUERY} />
-            </div>
-            <Button className="card-btn" href="https://artsell.herokuapp.com/" target="_blank">
-              Live Page
-            </Button>
-            <Button className="card-btn" href="https://github.com/MehaletKB/ArtSell" target="_blank">
               GitHub
             </Button>
           </Card.Body>
         </Card>
         
-        <Card className="card">
-          <Card.Img variant="top" className="img-style" src={MyDaily} />
-          <Card.Body className="body-style">
-            <Card.Title className="card-title">myDaily</Card.Title>
-            <Card.Text className="card-text">
-              A small landing page application with a variety of information that updates daily.
-            </Card.Text>
-              <div>
-                <Card.Img variant="top" className="tools" src={L_JQUERY} />
-                <Card.Img variant="top" className="tools" src={L_JQUERY} />
-            </div>
-            <Button className="card-btn" href="https://af-cmdz.github.io/myDaily/" target="_blank">
-              Live Page
-            </Button>
-            <Button className="card-btn" href="https://github.com/MehaletKB/myDaily" target="_blank">
-              GitHub
-            </Button>
-          </Card.Body>
-        </Card>
+
         
 
       {/* </Row> */}
