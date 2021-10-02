@@ -11,7 +11,7 @@ export default function About() {
     return (
         <div id="about">
             <div className ="about">
-                <h2><i class="fas fa-comment-dots">   I've got new skill and I'm not afraid to use them!</i></h2>
+                <h2><i class="fas fa-comment-dots"></i>I've got new skill and I'm not afraid to use them!</h2>
                 <Container className="about-text">
                     <div >
                         <p>Hi! I'm <strong>Mehalet</strong>, a newly minted Full Stack Developer whose true strength is in Frontend development. <br/>I'm very eager to help bring great ideas to life by collaborating and learning from fellow developers.</p><br/>

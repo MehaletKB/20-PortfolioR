@@ -11,13 +11,13 @@ export default function Navbar() {
             <div>
                 <Image id="hero" src={Hero} />
             </div>
-            <div class="box">
+            <div className="box">
                 <Image id="logo" src={Logo} />
                 <h1> Mehalet KesateBirhan</h1>
                 <ul className="text-center">
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                    <a className="nav-btn" href="#about">About</a>
+                    <a className="nav-btn" href="#projects">Projects</a>
+                    <a className="nav-btn" href="#contact">Contact</a>
                 </ul>
             </div>
 

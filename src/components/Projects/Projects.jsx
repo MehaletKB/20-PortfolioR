@@ -32,42 +32,75 @@ import "./Projects.css";
 
 function Projects() {
   return (
-    <div className="projects d-flex flex-row" id="projects">
+    <div className="project-top">
+    <h2><i class="fas fa-project-diagram"></i>Things I've Made</h2>
+    <div className="all-projects" id="projects">
       {/* <Row> */}
-        <Card className="card" style={{ width: "18rem" }}>
+        <Card className="card">
           <Card.Img variant="top" className="img-style" src={MyDaily} />
           <Card.Body className="body-style">
-            <Card.Title className="card-text">Card Title</Card.Title>
+            <Card.Title className="card-title">myDaily</Card.Title>
             <Card.Text className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              A small landing page application with a variety of information that updates daily.
             </Card.Text>
-            <Button className="btn-style">
-              Go somewhere
+              <div>
+                <Card.Img variant="top" className="tools" src={L_HTML} />
+                <Card.Img variant="top" className="tools" src={L_CSS3} />
+                <Card.Img variant="top" className="tools" src={L_JAVASCRIPT} />
+                <Card.Img variant="top" className="tools" src={L_JQUERY} />
+                <Card.Img variant="top" className="tools" src={L_GITHUB_PAGES} />
+            </div>
+            <Button className="card-btn" href="https://github.com/MehaletKB/myDaily" target="_blank">
+              Live Page
             </Button>
-            <Button className="btn-style">
-              Go somewhere
+            <Button className="card-btn" href="https://github.com/MehaletKB/myDaily" target="_blank">
+              GitHub
+            </Button>
+          </Card.Body>
+        </Card>
+        <Card className="card">
+          <Card.Img variant="top" className="img-style" src={ArtSell} />
+          <Card.Body className="body-style">
+            <Card.Title className="card-title">ArtSell</Card.Title>
+            <Card.Text className="card-text">
+              A small e-commerce application for the display and sale of artwork.
+            </Card.Text>
+              <div>
+                <Card.Img variant="top" className="tools" src={L_JQUERY} />
+                <Card.Img variant="top" className="tools" src={L_JQUERY} />
+            </div>
+            <Button className="card-btn" href="https://artsell.herokuapp.com/" target="_blank">
+              Live Page
+            </Button>
+            <Button className="card-btn" href="https://github.com/MehaletKB/ArtSell" target="_blank">
+              GitHub
             </Button>
           </Card.Body>
         </Card>
         
-        <Card className="card" style={{ width: "18rem" }}>
+        <Card className="card">
           <Card.Img variant="top" className="img-style" src={MyDaily} />
           <Card.Body className="body-style">
-            <Card.Title className="card-text">Card Title</Card.Title>
+            <Card.Title className="card-title">myDaily</Card.Title>
             <Card.Text className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              A small landing page application with a variety of information that updates daily.
             </Card.Text>
-            <Button className="btn-style">
-              Go somewhere
+              <div>
+                <Card.Img variant="top" className="tools" src={L_JQUERY} />
+                <Card.Img variant="top" className="tools" src={L_JQUERY} />
+            </div>
+            <Button className="card-btn" href="https://af-cmdz.github.io/myDaily/" target="_blank">
+              Live Page
             </Button>
-            <Button className="btn-style">
-              Go somewhere
+            <Button className="card-btn" href="https://github.com/MehaletKB/myDaily" target="_blank">
+              GitHub
             </Button>
           </Card.Body>
         </Card>
+        
+
       {/* </Row> */}
+    </div>
     </div>
   );
 }
