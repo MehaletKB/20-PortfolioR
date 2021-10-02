@@ -1,12 +1,58 @@
-.contact {
+.contact-section {
     background: rgb(30,74,5);
     background: linear-gradient(-2deg, rgb(10, 100, 48) 0%, rgb(71, 172, 197) 100%);
     margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.contact-info {
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 22vw;
+    text-align: center;
 }
 
 .contact-btns {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    padding-top: 40px;
-    padding-bottom: 40px;
+}
+
+input {
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
+textarea {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+label, 
+p {
+    color: white;
+    padding: 20px;
+    font-size: larger;
+}
+
+.msg-btn {
+    color: var(--white-text);
+    font-size: 20px;
+    padding: 4px;
+    background:rgb(118, 166, 179);
+    border-radius: 5px;
+}
+
+form {
+    margin-bottom: 30px;
+    justify-content: center
 }
