@@ -15,8 +15,8 @@
     font-size: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-top:5px;
+    justify-content: space-between;
+    padding:10px;
 }
 
 .topbar-btn {
