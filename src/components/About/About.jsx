@@ -28,11 +28,16 @@ export default function About() {
             <div className ="about">
                 <div className="topbar">
                     <div className="topbar-text">
-                        {navLinks.map((link, index) => (
+                        <div>
+                            <hp>Mehalet KesateBirhan</hp>
+                        </div>
+                        <div>
+                            {navLinks.map((link, index) => (
                             <NavLink key={index} to={link.route}  className="topbar-btn">
                                 {link.name}
                             </NavLink>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
                 

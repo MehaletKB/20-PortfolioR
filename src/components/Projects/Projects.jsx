@@ -42,11 +42,16 @@ function Projects() {
     <div className="project-top" id="projects">
       <div className="topbar">
         <div className="topbar-text">
-          {navLinks.map((link, index) => (
-            <NavLink key={index} to={link.route} className="topbar-btn">
-              {link.name}
-            </NavLink>
-          ))}
+          <div>
+            <hp>Mehalet KesateBirhan</hp>
+          </div>
+          <div>
+            {navLinks.map((link, index) => (
+              <NavLink key={index} to={link.route} className="topbar-btn">
+                {link.name}
+              </NavLink>
+            ))}
+          </div>
         </div>
       </div>
 
