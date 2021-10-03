@@ -3,8 +3,24 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers.js";
+import { NavLink } from "react-router-dom";
+
 import "./Contact.css";
 
+const navLinks = [
+  {
+    name: "Home",
+    route: "/home",
+  },
+  {
+    name: "About",
+    route: "/about",
+  },
+  {
+    name: "Projects",
+    route: "/projects",
+  },
+];
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -65,7 +81,19 @@ export default function Contact() {
 
   return (
     <div className="contact-section" id="contact">
-        <h2><i class="far fa-id-card fa-fw"></i> Get In Touch</h2>
+      <div className="topbar">
+        <div className="topbar-text">
+          {navLinks.map((link, index) => (
+            <NavLink key={index} to={link.route} className="topbar-btn">
+              {link.name}
+            </NavLink>
+          ))}
+        </div>
+      </div>
+
+      <h2>
+        <i class="far fa-id-card fa-fw"></i> Get In Touch
+      </h2>
       <div className="contact-info">
         <div>
           <Form className="form">
@@ -94,9 +122,7 @@ export default function Contact() {
             </div>
 
             <div className="message-area">
-              <label htmlFor={message}>
-                Message:
-              </label>
+              <label htmlFor={message}>Message:</label>
               <textarea
                 rows="4"
                 cols="40"
@@ -124,7 +150,6 @@ export default function Contact() {
             </div>
           )}
         </div>
-
 
         <div className="contact-btns">
           <Button
@@ -154,6 +179,5 @@ export default function Contact() {
         </div>
       </div>
     </div>
-
   );
 }

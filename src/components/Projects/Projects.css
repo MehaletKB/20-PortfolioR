@@ -4,12 +4,13 @@
     height: 100vh;
 }
 
+
 .all-projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 .card {
