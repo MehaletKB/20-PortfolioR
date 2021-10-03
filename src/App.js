@@ -4,6 +4,7 @@ import Home from "./components/Navbar/Navbar.jsx"
 import About from "./components/About/About.jsx"
 import Projects from "./components/Projects/Projects.jsx"
 import Contact from "./components/Contact/Contact.jsx"
+import Footer from "./components/Footer/Footer.jsx"
 import "./App.css"
 
 
@@ -22,13 +23,9 @@ function App() {
                 <Route path="/projects" component={Projects}></Route>
                 <Route path="/contact" component={Contact}></Route>
       </Switch>
-
-      {/* <div className="sections">
-        <About />
-        <Projects />
-        <Contact />
-      </div> */}
     </main>
+    
+    <Footer />
     </Router>
   );
 }

@@ -1,14 +1,14 @@
 .about {
     background: rgb(9,5,74);
     background: linear-gradient(-20deg, rgb(14, 60, 90) 0%, rgb(41, 129, 141) 40%, rgb(84, 156, 36) 100%);
-    height: 100vh
+    height: calc(100vh - 20px)
 
 }
 
 .topbar{
     width: 100%;
     background: rgba(0, 255, 255, 0.68);
-    height: 60px
+    height: 50px
 }
 
 .topbar-text {
@@ -16,7 +16,6 @@
     flex-direction: row;
     justify-content: space-around;
     font-size: 2rem;
-    padding: 15px;
 }
 
 .topbar-btn {
@@ -52,18 +51,10 @@ h2 {
     color: var(--white-text);
     font-size: 20px;
     justify-content: center;
-    /* align-items: center; */
-    /* text-align: center; */
     padding-top: 20px;
-    padding-bottom: 40px;
     width: 70vw;
     margin-left:auto;
     margin-right:auto;
     display: flex;
     flex-direction: row;
-}
-
-.footer {
-    background-color: rgba(255, 255, 255, 0.578);
-    text-align: center
 }
