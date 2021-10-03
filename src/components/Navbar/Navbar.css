@@ -1,6 +1,6 @@
 #hero {
     width: 100%;
-    height: auto
+    height: 100vh;
 }
 
 .box {
@@ -36,19 +36,16 @@ a {
     text-decoration: none;
 }
 
-ul {
-    filter: drop-shadow(7px 5px 7px rgba(24, 22, 12, 0.808));
+
+.nav-btn {
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-
-
-.nav-btn {
     color: var(--white-text);
     text-decoration: none;
+    filter: drop-shadow(7px 5px 7px rgba(24, 22, 12, 0.808));
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .nav-btn:hover {

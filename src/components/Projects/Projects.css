@@ -1,7 +1,7 @@
 .project-top {
     background: rgb(9,5,74);
     background: linear-gradient(-500deg, rgb(5, 29, 74) 0%, rgba(34,198,196,1) 100%);
-    margin-top: 4px
+    height: 100vh;
 }
 
 .all-projects {

@@ -1,4 +1,6 @@
-import Navbar from "./components/Navbar/Navbar.jsx"
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+
+import Home from "./components/Navbar/Navbar.jsx"
 import About from "./components/About/About.jsx"
 import Projects from "./components/Projects/Projects.jsx"
 import Contact from "./components/Contact/Contact.jsx"
@@ -7,14 +9,27 @@ import "./App.css"
 
 function App() {
   return (
-    <div className="app">
-      <Navbar />
-      <div className="sections">
+    <Router>
+    <main className="app">
+      <Switch >
+                <Redirect exact from="/20-portfolior" to="/about"></Redirect>
+                
+                <Route exact path="/">
+                  <Redirect to="/home"/>
+                </Route>
+                <Route path="/home" component={Home}></Route>
+                <Route path="/about" component={About}></Route>
+                <Route path="/projects" component={Projects}></Route>
+                <Route path="/contact" component={Contact}></Route>
+      </Switch>
+
+      {/* <div className="sections">
         <About />
         <Projects />
         <Contact />
-      </div>
-    </div>
+      </div> */}
+    </main>
+    </Router>
   );
 }
 

@@ -5,6 +5,25 @@ import Hero from "../../images/hero.jpg"
 import Logo from "../../images/logoW.png"
 import "./Navbar.css"
 
+
+import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
+
+const navLinks = [
+    {
+        name: "About",
+        route: "/about",
+    },
+    {
+        name: "Projects",
+        route: "/projects",
+    },
+    {
+        name: "Contact",
+        route: "/contact",
+    },
+];
+
 export default function Navbar() {
     return (
         <Container fluid>
@@ -14,13 +33,23 @@ export default function Navbar() {
             <div className="box">
                 <Image id="logo" src={Logo} />
                 <h1> Mehalet KesateBirhan</h1>
+
                 <ul className="text-center">
-                    <a className="nav-btn" href="#about">About</a>
-                    <a className="nav-btn" href="#projects">Projects</a>
-                    <a className="nav-btn" href="#contact">Contact</a>
+                    <div>
+                        {navLinks.map((link, index) => (
+                            <NavLink key={index} to={link.route}  className="nav-btn">
+                                {link.name}
+                            </NavLink>
+                        ))}
+                    </div>
                 </ul>
             </div>
 
         </Container>
     )
 }
+
+Navbar.propTypes = {
+    name: PropTypes.string,
+    route: PropTypes.string,
+};
