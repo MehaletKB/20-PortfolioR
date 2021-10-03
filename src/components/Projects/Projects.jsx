@@ -1,10 +1,5 @@
 import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import CardGroup from "react-bootstrap/CardGroup";
-import Image from "react-bootstrap/Image";
 import { NavLink } from "react-router-dom";
-
 import Button from "react-bootstrap/Button";
 
 import MyDaily from "../../images/projects/07-myDaily.gif";
@@ -16,17 +11,11 @@ import L_CSS3 from "../../images/tools/CSS3_logo.svg";
 import L_EXPRESS from "../../images/tools/express.svg";
 import L_BOOTSTRAP from "../../images/tools/bootstrap-4.svg";
 import L_HANDLEBARS from "../../images/tools/handlebars.svg";
-import L_REACT from "../../images/tools/react.svg";
-import L_REACT_ROUTER from "../../images/tools/react-router.svg";
-import L_REACT_BOOTSTRAP from "../../images/tools/react-bootstrap.svg";
 import L_MYSQL from "../../images/tools/mysql.svg";
 import L_MONGODB from "../../images/tools/mongodb.svg";
-import L_NODE from "../../images/tools/nodejs.svg";
 import L_JAVASCRIPT from "../../images/tools/javascript.svg";
 import L_HEROKU from "../../images/tools/heroku.svg";
-import L_GIT from "../../images/tools/git-icon.svg";
 import L_GITHUB_PAGES from "../../images/tools/github.svg";
-import L_REDUX from "../../images/tools/redux.svg";
 import L_JQUERY from "../../images/tools/jquery.svg";
 import L_STRIPE from "../../images/tools/stripe.svg";
 import L_BULMA from "../../images/tools/bulma.svg";
@@ -65,7 +54,6 @@ function Projects() {
         <i class="fas fa-project-diagram"></i> Things I've Worked On
       </h2>
       <div className="all-projects">
-        {/* <Row> */}
         <Card className="card">
           <Card.Img variant="top" className="img-style" src={WorkoutTracker} />
           <Card.Body className="body-style">
@@ -159,8 +147,6 @@ function Projects() {
             </Button>
           </Card.Body>
         </Card>
-
-        {/* </Row> */}
       </div>
     </div>
   );

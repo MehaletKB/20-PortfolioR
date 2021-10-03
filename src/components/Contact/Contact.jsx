@@ -1,10 +1,8 @@
-// import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers.js";
 import { NavLink } from "react-router-dom";
-
 import "./Contact.css";
 
 const navLinks = [
@@ -179,5 +177,6 @@ export default function Contact() {
         </div>
       </div>
     </div>
+    
   );
 }
