@@ -13,7 +13,7 @@ function App() {
     <Router>
     <main className="app">
       <Switch >
-                <Redirect exact from="/20-portfolior" to="/about"></Redirect>
+                <Redirect exact from="/20-portfolior" to="/home"></Redirect>
                 
                 <Route exact path="/">
                   <Redirect to="/home"/>
