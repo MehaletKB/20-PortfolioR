@@ -138,7 +138,7 @@ function Projects() {
             </div>
             <Button
               className="card-btn"
-              href="https://github.com/MehaletKB/myDaily"
+              href="https://mehaletkb.github.io/myDaily/"
               target="_blank"
             >
               Live Page

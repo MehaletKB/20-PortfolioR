@@ -13,15 +13,15 @@ function App() {
     <Router>
     <main className="app">
       <Switch >
-                <Redirect exact from="/20-portfolior" to="/home"></Redirect>
+        <Redirect exact from="/20-portfolior" to="/home"></Redirect>
                 
-                <Route exact path="/">
-                  <Redirect to="/home"/>
-                </Route>
-                <Route path="/home" component={Home}></Route>
-                <Route path="/about" component={About}></Route>
-                <Route path="/projects" component={Projects}></Route>
-                <Route path="/contact" component={Contact}></Route>
+        <Route exact path="/">
+          <Redirect to="/home"/>
+        </Route>
+        <Route path="/home" component={Home}></Route>
+        <Route path="/about" component={About}></Route>
+        <Route path="/projects" component={Projects}></Route>
+        <Route path="/contact" component={Contact}></Route>
       </Switch>
     </main>
     
