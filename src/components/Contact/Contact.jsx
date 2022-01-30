@@ -1,7 +1,7 @@
 import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import React, { useState } from "react";
-import { validateEmail } from "../../utils/helpers.js";
+// import Form from "react-bootstrap/Form";
+// import React, { useState } from "react";
+// import { validateEmail } from "../../utils/helpers.js";
 import { NavLink } from "react-router-dom";
 import "./Contact.css";
 
@@ -21,61 +21,61 @@ const navLinks = [
 ];
 
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [message, setMessage] = useState("");
+  // const [errorMessage, setErrorMessage] = useState("");
 
-  const handleInputChange = (e) => {
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
+  // const handleInputChange = (e) => {
+  //   const { target } = e;
+  //   const inputType = target.name;
+  //   const inputValue = target.value;
 
-    if (inputType === "name") {
-      setName(inputValue);
-      setErrorMessage("");
-    } else if (inputType === "email") {
-      setEmail(inputValue);
-      setErrorMessage("");
-    } else {
-      setMessage(inputValue);
-      setErrorMessage("");
-    }
-  };
+  //   if (inputType === "name") {
+  //     setName(inputValue);
+  //     setErrorMessage("");
+  //   } else if (inputType === "email") {
+  //     setEmail(inputValue);
+  //     setErrorMessage("");
+  //   } else {
+  //     setMessage(inputValue);
+  //     setErrorMessage("");
+  //   }
+  // };
 
-  const handleBlur = (e) => {
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
+  // const handleBlur = (e) => {
+  //   const { target } = e;
+  //   const inputType = target.name;
+  //   const inputValue = target.value;
 
-    if (!inputValue) {
-      setErrorMessage(`ERROR: ${inputType} cannot be blank`);
-    } else if (inputType === "email" && !validateEmail(email)) {
-      setErrorMessage(`Your email is not valid`);
-      return;
-    }
-  };
+  //   if (!inputValue) {
+  //     setErrorMessage(`ERROR: ${inputType} cannot be blank`);
+  //   } else if (inputType === "email" && !validateEmail(email)) {
+  //     setErrorMessage(`Your email is not valid`);
+  //     return;
+  //   }
+  // };
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
+  // const handleFormSubmit = (e) => {
+  //   e.preventDefault();
 
-    if (!name) {
-      setErrorMessage("Name cannot be blank");
-      return;
-    }
-    if (!message) {
-      setErrorMessage("Message cannot be blank");
-      return;
-    }
-    if (!validateEmail(email)) {
-      setErrorMessage(`Your email is invalid`);
-      return;
-    }
+  //   if (!name) {
+  //     setErrorMessage("Name cannot be blank");
+  //     return;
+  //   }
+  //   if (!message) {
+  //     setErrorMessage("Message cannot be blank");
+  //     return;
+  //   }
+  //   if (!validateEmail(email)) {
+  //     setErrorMessage(`Your email is invalid`);
+  //     return;
+  //   }
 
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
+  //   setName("");
+  //   setEmail("");
+  //   setMessage("");
+  // };
 
   return (
     <div className="contact-section" id="contact">
@@ -98,7 +98,7 @@ export default function Contact() {
         <i class="far fa-id-card fa-fw"></i> Get In Touch
       </h2>
       <div className="contact-info">
-        <div>
+        {/* <div>
           <Form className="form">
             <div>
               <label htmlFor={name}>Name:</label>
@@ -152,33 +152,44 @@ export default function Contact() {
               <p>{errorMessage}</p>
             </div>
           )}
-        </div>
+        </div> */}
 
         <div className="contact-btns">
           <Button
-            classnName="contact-btn"
+            className="contact-btn"
             href="https://www.linkedin.com/in/mkesate/"
             target="_blank"
             variant="info"
           >
-            <i class="fab fa-linkedin fa-2x"> LinkedIn</i>
+            <i class="fab fa-linkedin"></i> LinkedIn
           </Button>{" "}
+
           <Button
-            classnName="contact-btn"
+            className="contact-btn"
             href="https://github.com/MehaletKB"
             target="_blank"
             variant="info"
           >
-            <i class="fab fa-github fa-2x"> GitHub</i>
+            <i class="fab fa-github"></i> GitHub
           </Button>{" "}
+          
           <Button
-            classnName="contact-btn"
+            className="contact-btn"
             href="https://docs.google.com/document/d/1e_ixmwnNyYB1eCNGUp5QUwa80_ldEXDl1Wy6zbOAlM8/edit?usp=sharing"
             target="_blank"
             variant="info"
           >
-            <i class="far fa-file fa-2x"> Resume</i>
+            <i class="far fa-file"></i> Resume
           </Button>{" "}
+
+          <Button
+            className="contact-btn"
+            href="mailto:mkesatebirhan@gmail.com"
+
+          >
+            <i class="fas fa-envelope-square"></i> mkesatebirhan@gmail.com
+          </Button>{" "}
+
         </div>
       </div>
     </div>

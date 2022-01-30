@@ -72,14 +72,14 @@ function Projects() {
             </div>
             <Button
               className="card-btn"
-              href="https://github.com/MehaletKB/18-WorkoutTracker"
+              href="https://floating-tundra-80148.herokuapp.com/?id=613eac9076b6491c68a6b56a"
               target="_blank"
             >
               Live Page
             </Button>
             <Button
               className="card-btn"
-              href="https://floating-tundra-80148.herokuapp.com/?id=613eac9076b6491c68a6b56a"
+              href="https://github.com/MehaletKB/18-WorkoutTracker"
               target="_blank"
             >
               GitHub

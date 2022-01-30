@@ -2,9 +2,8 @@ import React from "react"
 import Image from 'react-bootstrap/Image'
 import Container from 'react-bootstrap/Container'
 import Hero from "../../images/hero.jpg"
-import Logo from "../../images/logoW.png"
+import Logo from "../../images/logoW2.png"
 import "./Navbar.css"
-
 
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
@@ -32,9 +31,9 @@ export default function Navbar() {
             </div>
             <div className="box">
                 <Image id="logo" src={Logo} />
-                <h1> Mehalet KesateBirhan</h1>
+                {/* <h1> Mehalet KesateBirhan</h1> */}
 
-                <ul className="text-center">
+                <ul>
                     <div>
                         {navLinks.map((link, index) => (
                             <NavLink key={index} to={link.route}  className="nav-btn">

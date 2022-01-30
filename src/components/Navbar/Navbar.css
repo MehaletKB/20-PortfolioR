@@ -1,12 +1,12 @@
 #hero {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100vh;
 }
 
 .box {
     background-image: linear-gradient(30deg, rgba(0, 148, 233, 0.5) 0%, rgba(73, 133, 98, 0.5) 50%, #283a2a 100%);
     width: 25vw;
-    position:absolute;
+    position: fixed;
     top: 0;
     height: 100vh;
     z-index: 10;
@@ -15,20 +15,21 @@
 
 #logo {
     filter: drop-shadow(0px 0px 10px rgba(31, 29, 16, 0.5));
-    max-height: 25vw;
+    max-height: 30vw;
     display: flex;
     margin-left: 25px;
     margin-top: 40px;
+    margin-bottom: 20px;
 
 }
 
-h1 {
+/* h1 {
     font-family: 'Stalemate', cursive;
     font-size: 4vw;
     text-align: center;
     color: var(--white-text);
     filter: drop-shadow(0px 0px 10px rgba(31, 29, 16, 0.5));
-}
+} */
 
 a {
     color: white;
@@ -43,7 +44,7 @@ a {
     color: var(--white-text);
     text-decoration: none;
     filter: drop-shadow(7px 5px 7px rgba(24, 22, 12, 0.808));
-    font-size: 30px;
+    font-size: 1.5rem;
     margin-bottom: 25px;
 }
 
